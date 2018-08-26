@@ -2,18 +2,18 @@
 using namespace std;
 
 int main(){
-	int count=0,N,i;
-	cin>>N;
-	for(long i=1;i<=2147483648;i++){
-		if(N%i == 0){
-			count++;
+	int s=1, n, d;
+	cin>>n;
+	for(d=2; d<n; d++){
+		if(n%d == 0){
+			s = 0;
+			break;
 		}
 	}
-	if(count == 2){
-		cout << "true";
-	}
-	else{
+	if(s == 0){
 		cout << "false";
 	}
-	return 0;
+	else{
+		cout << "true";
+	}
 }
