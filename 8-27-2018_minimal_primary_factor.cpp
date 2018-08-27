@@ -13,13 +13,13 @@ int main() {
 			a = b;
 			b = temp;
 		}
-		cout << a;
+		cout << "Minimal Primary Factor : " <<  a;
 	} else {
 		while(a > 0) {
 			temp = b % a;
 			b = a;
 			a = temp;
 		}
-		cout << b;
+		cout << "Minimal Primary Factor : " << b;
 	}
-}
+}a
