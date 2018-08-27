@@ -22,4 +22,4 @@ int main() {
 		}
 		cout << "Minimal Primary Factor : " << b;
 	}
-}a
+}
