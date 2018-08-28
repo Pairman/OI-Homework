@@ -1,14 +1,23 @@
 #include <iostream>
 using namespace std;
 
-int main()  {
-	int factor = 1, sum = 0, n;
-	cout << "Input a number : ";
-	cin >> n;
+int factorial(int j)  {
+	long long factor = 1;
+	long long s = 0;
 	
-	for(int i = 1; i <= n; i++) {
+	for(int i = 1; i <= j; i++) {
 		factor = factor * i;
-		sum += factor;
 	}
-	cout << factor;
+	s += factor;
+	return s;
+}
+
+int main() {
+	long long S = 0;
+	int N;
+	cin >> N;
+	for(int j = 1; j <= N; j++) {
+		S += factorial(j);
+	}
+	cout << S << endl;
 }
