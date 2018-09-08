@@ -1,19 +1,18 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main(){
-	int s=1, n, d;
-	cin>>n;
-	for(d=2; d<n; d++){
-		if(n%d == 0){
-			s = 0;
+int main() {
+	int n, judge = 0;
+	cin >> n;
+	for(int i = 2; i < n; i ++) {
+		if(n % i == 0) {
+			judge = 1;
 			break;
 		}
 	}
-	if(s == 0){
-		cout << "false";
-	}
-	else{
-		cout << "true";
+	if(judge == 0) {
+		cout << "True";
+	} else {
+		cout << "False";
 	}
 }
